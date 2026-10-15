@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a1528"/>
+      <stop offset="35%" stop-color="#701a38"/>
+      <stop offset="70%" stop-color="#9d174d"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#ffd54f"/>
+      <stop offset="70%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Background -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.85"/>
+  <rect x="26" y="26" width="460" height="460" rx="90" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+
+  <!-- Golden Angel Wings -->
+  <g transform="translate(256, 175)" filter="url(#goldGlow)">
+    <path d="M-150 20 C-90 -70, -20 -30, 0 30 C20 -30, 90 -70, 150 20 C90 -10, 30 15, 0 55 C-30 15, -90 -10, -150 20 Z" fill="url(#goldGrad)"/>
+    <path d="M-110 50 C-70 -10, -20 15, 0 65 C20 15, 70 -10, 110 50 C70 30, 25 45, 0 85 C-25 45, -70 30, -110 50 Z" fill="url(#goldGrad)" opacity="0.85"/>
+    <circle cx="0" cy="50" r="14" fill="#fff" opacity="0.95"/>
+    <circle cx="0" cy="50" r="8" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Victoria's Secret Monogram -->
+  <text x="256" y="340" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="128" font-weight="700" letter-spacing="8" fill="url(#goldGrad)" filter="url(#goldGlow)">VS</text>
+
+  <!-- Subtitle -->
+  <text x="256" y="395" text-anchor="middle" font-family="'Quicksand', sans-serif" font-size="28" font-weight="800" letter-spacing="12" fill="#fff" opacity="0.95">BOUTIQUE</text>
+  <text x="256" y="435" text-anchor="middle" font-family="'Quicksand', sans-serif" font-size="20" font-weight="800" letter-spacing="8" fill="#ffd54f">LUXURY TYCOON</text>
+</svg>
